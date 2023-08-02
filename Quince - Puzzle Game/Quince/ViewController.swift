@@ -81,10 +81,8 @@ class ViewController: UIViewController {
             }
         }
         if cont == 16{
-            print(cont)
             return true
         } else {
-            print(cont)
             return false
         }
     }
