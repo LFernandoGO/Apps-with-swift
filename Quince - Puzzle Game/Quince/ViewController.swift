@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             imageViews[referenceIndex].image = tempImage
             
             if isPuzzleSolved(){
+                
                 showAlert()
             }
         }
@@ -100,7 +101,7 @@ class ViewController: UIViewController {
     // To display the alert when the user completed the puzzle
     func showAlert(){
         DispatchQueue.main.async(execute: {
-            let alertController = UIAlertController(title: "Its Done", message: "Well DONE!", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "YOU WIN", message: "Well DONE! :)", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default)
             alertController.addAction(okAction)
             self.present(alertController, animated: true)
